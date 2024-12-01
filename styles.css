@@ -23,13 +23,13 @@
 
 /* Estilo global */
 body {
-  font-family: "Lato", sans-serif; /* Fuente para el cuerpo */
-  font-size: 16px; /* Tamaño de texto estándar */
-  line-height: 1.6; /* Espaciado para mejorar la legibilidad */
-  color: #333; /* Color de texto principal */
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; /* Fondo neutro */
+  background-color: #f9f9f9;
 }
 
 /* Encabezados */
@@ -39,29 +39,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif; /* Fuente para encabezados */
-  font-weight: 700; /* Negrita para dar fuerza a los encabezados */
-  margin: 0 0 10px; /* Espaciado inferior */
-  color: #222; /* Color ligeramente más oscuro */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #222;
 }
 
 /* Otros elementos */
+/* Párrafos */
 p {
-  margin: 0 0 15px; /* Espaciado entre párrafos */
+  margin: 0 0 15px;
 }
 
+/* Enlaces */
 a {
-  color: #0077cc; /* Azul para enlaces */
-  text-decoration: none; /* Sin subrayado */
+  color: #0077cc;
+  text-decoration: none;
 }
 
+/* Enlaces Hover */
 a:hover {
-  text-decoration: underline; /* Subrayado al pasar el cursor */
+  text-decoration: underline;
 }
 
 h1 {
-  font-size: 2.5rem; /* Más grande para títulos principales */
-  line-height: 1.2; /* Menor line-height para encabezados grandes */
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -83,45 +86,29 @@ h5 {
 
 h6 {
   font-size: 1rem;
-  font-weight: 600; /* Menos énfasis para niveles bajos */
+  font-weight: 600;
 }
 
 /* Textos generales */
 p,
 li {
-  font-size: 1rem; /* Tamaño base */
-  line-height: 1.6; /* Altura de línea amplia */
-  color: #444; /* Color un poco más claro que los encabezados */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
 }
 
 /* Listas */
 ul,
 ol {
-  padding-left: 20px; /* Indentación */
+  padding-left: 20px;
   margin: 0 0 15px;
 }
 
 li {
-  margin-bottom: 10px; /* Espaciado entre elementos */
+  margin-bottom: 10px;
 }
 
-.btn {
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  background-color: #0077cc;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #005fa3; /* Color más oscuro al pasar el cursor */
-}
-
+/* Citas */
 blockquote {
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
@@ -132,8 +119,137 @@ blockquote {
   margin: 0 0 15px;
 }
 
+/* Texto pequeño */
 small {
   font-family: "Lato", sans-serif;
   font-size: 0.875rem;
   color: #666;
+}
+
+/* Clases personalizadas */
+
+/* General para la sección del menú */
+.header {
+  background-color: #73ec8b;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.homeLink {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.5s ease; /* Animación */
+  -webkit-text-stroke: 1px #019200; /* Borde verde al texto */
+}
+
+.homeLink:hover {
+  color: #019200;
+  text-decoration: none; /* Sin subrayado */
+  -webkit-text-stroke: 1px #fff; /* Borde blanco al texto */
+}
+
+/* Menú de navegación */
+.menu {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  border-top: 2px solid #0077cc; /* Línea superior azul */
+  border-bottom: 2px solid #0077cc; /* Línea inferior azul */
+}
+
+/* Botones del menú */
+.menuButton {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Animación */
+}
+
+/* Efectos al pasar el cursor */
+.menuButton:hover {
+  background-color: #0077cc;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-decoration: none;
+}
+
+/* Estilo al presionar click sobre el botón */
+.menuButton:active {
+  background-color: #005fa3;
+  transform: scale(0.98); /* Hacer un poco más pequeño */
+}
+
+/* Contenido */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Todas las imagenes dentro de una etiqueta main */
+main img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Todos los párrafos dentro de una etiqueta main */
+main p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Pie de página */
+footer {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #005fa3;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+}
+
+footer p small {
+  color: #e0e0e0;
+}
+
+footer p strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Tabla de contenidos historia */
+.contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 0 20px 0;
 }
