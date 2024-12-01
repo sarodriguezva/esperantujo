@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Estilo global */
+body {
+  font-family: "Lato", sans-serif; /* Fuente para el cuerpo */
+  font-size: 16px; /* Tamaño de texto estándar */
+  line-height: 1.6; /* Espaciado para mejorar la legibilidad */
+  color: #333; /* Color de texto principal */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Fondo neutro */
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif; /* Fuente para encabezados */
+  font-weight: 700; /* Negrita para dar fuerza a los encabezados */
+  margin: 0 0 10px; /* Espaciado inferior */
+  color: #222; /* Color ligeramente más oscuro */
+}
+
+/* Otros elementos */
+p {
+  margin: 0 0 15px; /* Espaciado entre párrafos */
+}
+
+a {
+  color: #0077cc; /* Azul para enlaces */
+  text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+h1 {
+  font-size: 2.5rem; /* Más grande para títulos principales */
+  line-height: 1.2; /* Menor line-height para encabezados grandes */
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600; /* Menos énfasis para niveles bajos */
+}
+
+/* Textos generales */
+p,
+li {
+  font-size: 1rem; /* Tamaño base */
+  line-height: 1.6; /* Altura de línea amplia */
+  color: #444; /* Color un poco más claro que los encabezados */
+}
+
+/* Listas */
+ul,
+ol {
+  padding-left: 20px; /* Indentación */
+  margin: 0 0 15px;
+}
+
+li {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3; /* Color más oscuro al pasar el cursor */
+}
+
+blockquote {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #0077cc;
+  padding-left: 15px;
+  margin: 0 0 15px;
+}
+
+small {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  color: #666;
+}
