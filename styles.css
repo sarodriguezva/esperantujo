@@ -129,13 +129,13 @@ small {
 /* Clases personalizadas */
 
 /* General para la sección del menú */
-.header {
+header {
   background-color: #73ec8b;
   padding: 10px 0;
   text-align: center;
 }
 
-.header h1 {
+header h1 {
   margin: 0;
 }
 
@@ -156,17 +156,32 @@ small {
 }
 
 /* Menú de navegación */
-.menu {
+.navRow {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   padding: 10px 0;
   background-color: #f9f9f9;
   border-top: 2px solid #0077cc; /* Línea superior azul */
   border-bottom: 2px solid #0077cc; /* Línea inferior azul */
+  height: 45px;
+}
+
+.menu {
+  display: flex;
+  margin: 0 auto;
 }
 
 /* Botones del menú */
+#menuToggleCheckbox {
+  display: none;
+}
+
+.menuIcon {
+  display: none;
+}
+
 .menuButton {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -252,4 +267,71 @@ footer p strong {
   flex-direction: column;
   align-items: start;
   margin: 0 0 20px 0;
+}
+
+@media only screen and (max-width: 799px) {
+  body {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  main {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 90%;
+  }
+
+  main img {
+    width: 80%;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #menuToggleCheckbox:checked ~ .menu {
+    margin-left: 0;
+  }
+
+  .menuIcon {
+    display: flex;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación */
+  }
+
+  .menuIcon:hover {
+    background-color: #0077cc;
+    cursor: pointer;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    padding: 0;
+    width: 150px;
+    margin-top: 300px;
+    margin-left: -60%;
+    background-color: lightgray;
+    transition: all 0.3s ease;
+  }
 }
