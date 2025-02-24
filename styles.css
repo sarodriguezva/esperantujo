@@ -236,6 +236,42 @@ main p {
   text-align: justify;
 }
 
+/* Mapa interactivo*/
+.map {
+  width: 100%;
+  position: relative;
+}
+
+.mundi {
+  width: 100%;
+}
+
+.locationImage {
+  width: 100%;
+}
+
+/* Todos los location en el mapa interactivo*/
+[class^="uk20"] {
+  position: absolute;
+  z-index: 2;
+  width: 2.5%;
+  border: none;
+  box-shadow: none;
+}
+
+/* Posiciones individuales de los location en el mapa interactivo */
+.uk2014 { top: 70%; left: 21%; } /* Argentina */
+.uk2015 { top: 16%; left: 40%; } /* Francia */
+.uk2016 { top: 16%; left: 45%; width:2% } /* Slovakia */
+.uk2017 { top: 22%; left: 76.3%; } /* Surcorea */
+.uk2018 { top: 20%; left: 37.5%; } /* Portugal */
+.uk2019 { top: 5%; left: 46.5%; } /* Finlandia */
+.uk2020 { top: 75%; left: 3%; width:4%} /* Internet */
+.uk2021 { top: 75%; left: 10%; width:4%} /* Internet */
+.uk2022 { top: 15%; left: 18%; } /* Canadá */
+.uk2023 { top: 21%; left: 44.3%; width:2% } /* Italia */
+.uk2024 { top: 50%; left: 50%; } /* Tanzania */
+
 /* Pie de página */
 footer {
   background-color: #0077cc;
